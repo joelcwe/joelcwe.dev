@@ -3,13 +3,18 @@ const config = {
   "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"],
 
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+        logo: ['Sharpie']
+      }
+    }
   },
 
   plugins: [
     require('flowbite/plugin')
   ],
-  
+
   darkMode: 'class',
 };
 

@@ -1,6 +1,6 @@
 <script>
     import { page } from '$app/stores';
-    import { Navbar,NavBrand, NavLi, NavUl } from 'flowbite-svelte'
+    import { DarkMode, Navbar,NavBrand, NavLi, NavUl } from 'flowbite-svelte'
     let nav =[
         {title: 'About', link: '/about'},
         {title: 'Blog', link: '/blog'},
@@ -10,7 +10,7 @@
 </script>
 
 <Navbar let:hidden>
-    <NavBrand>
+    <NavBrand class='font-logo font-bold text-5xl'>
         joel
     </NavBrand>
     <NavUl {hidden}>
@@ -18,4 +18,5 @@
         <NavLi active={$page.url.pathname === it.link} href={it.link}>{it.title}</NavLi>
         {/each}
     </NavUl>
+    <DarkMode/>
 </Navbar>
