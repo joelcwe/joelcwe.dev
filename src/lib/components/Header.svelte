@@ -1,19 +1,21 @@
 <script>
     import { page } from '$app/stores';
-    import { DarkMode, Navbar,NavBrand, NavLi, NavUl } from 'flowbite-svelte'
+    import { DarkMode, Navbar,NavHamburger, NavBrand, NavLi, NavUl } from 'flowbite-svelte'
     let nav =[
         {title: 'About', link: '/about'},
         {title: 'Blog', link: '/blog'},
         {title: 'Resume', link: '/resume'},
         {title: 'Projects', link: '/projects'},
     ]
+    let hamburgerOpen =false;
 </script>
 
-<Navbar let:hidden>
+<Navbar let:hidden let:toggle>
+    <NavHamburger on:click={toggle}/>
     <NavBrand class='font-logo font-bold text-5xl'>
-        joel
+        <span>joel</span>
     </NavBrand>
-    <NavUl {hidden}>
+    <NavUl {hidden} class="order-1 md:order-none">
         {#each nav as it }
         <NavLi active={$page.url.pathname === it.link} href={it.link}>{it.title}</NavLi>
         {/each}
