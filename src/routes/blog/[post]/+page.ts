@@ -4,7 +4,7 @@ import type { PageLoad } from './$types'
 
 export const load = (async ({ params }) => {
 	try {	
-		const post = await import(`../../../routes/blog/${params.post}.svx`)
+		const post = await import(`../../../posts/${params.post}.svx`)
 		return {
 			PostContent: post.default,
 			meta: { ...post.metadata, slug: params.post } 

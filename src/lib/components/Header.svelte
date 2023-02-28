@@ -10,7 +10,7 @@
     let hamburgerOpen =false;
 </script>
 
-<Navbar let:hidden let:toggle>
+<Navbar let:hidden let:toggle class="mb-16">
     <NavHamburger on:click={toggle}/>
     <NavBrand class='font-logo font-bold text-5xl'>
         <span>joel</span>

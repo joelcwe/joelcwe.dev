@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="flex justify-center mt-48">
+<div class="flex justify-center">
 <Card img={cooper} horizontal reverse class="text-black dark:text-white">
     <h5 class="font-logo">Hi, I am Joel.</h5>
     <p class="mt-8 italic font-light">

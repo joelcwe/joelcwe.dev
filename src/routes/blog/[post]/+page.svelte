@@ -2,8 +2,7 @@
     This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script lang="ts">
     import { Heading } from "flowbite-svelte";
-    import Time, { svelteTime } from "svelte-time";
-    import { dayjs } from "svelte-time";
+    import Time from "svelte-time";
 
     export let data
     
@@ -34,7 +33,7 @@
     </svelte:head>
     
     
-<article class="container mx-auto mt-32 max-w-2xl ">  
+<article class="container mx-auto max-w-2xl ">  
     <Heading>{title}</Heading>
     <Time timestamp={publishedDate}/>
     <div class= "mt-8  prose prose-stone dark:prose-invert">
