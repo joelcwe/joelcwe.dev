@@ -7,7 +7,6 @@
         {title: 'Resume', link: '/resume'},
         {title: 'Projects', link: '/projects'},
     ]
-    let hamburgerOpen =false;
 </script>
 
 <Navbar let:hidden let:toggle class="mb-16">

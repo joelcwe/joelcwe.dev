@@ -1,6 +1,6 @@
 // adapted from https://github.com/josh-collinsworth/sveltekit-blog-starter/blob/main/src/lib/assets/js/fetchPosts.js
 import { json, error } from "@sveltejs/kit";
-import type { RequestHandler } from '../$types';
+import type { RequestHandler } from './$types';
 
 export const prerender = true;
 
