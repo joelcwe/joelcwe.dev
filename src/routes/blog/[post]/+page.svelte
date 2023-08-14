@@ -21,6 +21,7 @@
 				if (mutation.attributeName === 'class') {
 					const classList = Array.from(htmlElement.classList);
 					theme = classList.includes('dark') ? 'dark' : 'light';
+                    consloe.log("test");
 				}
 			});
 		});
