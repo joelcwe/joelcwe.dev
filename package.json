@@ -24,10 +24,10 @@
 		"classnames": "^2.3.2",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
+		"eslint-plugin-svelte": "^2.32.4",
 		"flowbite": "^1.6.3",
-		"flowbite-svelte": "^0.29.13",
-		"mdsvex": "^0.10.6",
+		"flowbite-svelte": "^0.38.2",
+		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.14",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.8.0",
@@ -42,5 +42,8 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@giscus/svelte": "^2.3.0"
+	}
 }
