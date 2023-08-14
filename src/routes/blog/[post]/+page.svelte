@@ -21,7 +21,6 @@
 				if (mutation.attributeName === 'class') {
 					const classList = Array.from(htmlElement.classList);
 					theme = classList.includes('dark') ? 'dark' : 'light';
-                    consloe.log("test");
 				}
 			});
 		});
@@ -49,10 +48,10 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<article class="container mx-auto max-w-2xl ">
+<article class="container mx-auto max-w-2xl">
 	<Heading>{title}</Heading>
 	<Time timestamp={publishedDate} />
-	<div class="mt-8  prose prose-stone dark:prose-invert">
+	<div class="mt-8 prose prose-stone dark:prose-invert">
 		<svelte:component this={PostContent} />
 	</div>
 

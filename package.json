@@ -11,8 +11,8 @@
 		"test": "playwright test",
 		"test:unit": "vitest",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --ignore-path .gitignore --plugin-search-dir . --write ."
-		
+		"format": "prettier --ignore-path .gitignore --plugin-search-dir . --write .",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -48,5 +48,9 @@
 	"type": "module",
 	"dependencies": {
 		"@giscus/svelte": "^2.3.0"
+	},
+	"lint-staged": {
+		"*.js": "eslint --cache --fix",
+		"*.{js,css,md}": "prettier --write"
 	}
 }
